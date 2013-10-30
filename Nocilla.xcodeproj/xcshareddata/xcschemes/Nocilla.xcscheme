@@ -14,21 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A085B83715E30749007D33C1"
-               BuildableName = "libNocilla.a"
-               BlueprintName = "Nocilla"
-               ReferencedContainer = "container:Nocilla.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5AC7630F57FB441AB2C054BD"
+               BlueprintIdentifier = "5A6B4FA0C5504B76A5BC1971"
                BuildableName = "libPods.a"
                BlueprintName = "Pods"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -42,10 +28,24 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C243D7829824088A45E65AD"
+               BlueprintIdentifier = "78CFD77804E24A0A8FBB2368"
                BuildableName = "libPods-NocillaTests.a"
                BlueprintName = "Pods-NocillaTests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A085B83715E30749007D33C1"
+               BuildableName = "libNocilla.a"
+               BlueprintName = "Nocilla"
+               ReferencedContainer = "container:Nocilla.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
