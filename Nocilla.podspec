@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/luisobo/Nocilla.git", :tag => "0.7.1" }
 
-  s.ios.deployment_target = '4.0'
+  s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.7'
 
   s.source_files = 'Nocilla/**/*.{h,m}'
@@ -28,4 +28,5 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.frameworks = 'CFNetwork'
+  s.dependency 'JRSwizzle', '~> 1.0'
 end
