@@ -1,13 +1,12 @@
 #import "Kiwi.h"
 #import "Nocilla.h"
-#import "HTTPServer.h"
-#import "LSHTTPStubURLProtocol.h"
-
+#import "NSURLSessionConfiguration+Nocilla.h"
 
 SPEC_BEGIN(NSURLSessionStubbingSepc)
 
 beforeEach(^{
     [[LSNocilla sharedInstance] start];
+  
 });
 afterEach(^{
     [[LSNocilla sharedInstance] stop];
@@ -15,7 +14,7 @@ afterEach(^{
 });
 
 context(@"NSURLSession", ^{
-    it(@"should stub the request", ^{
+    it(@"should stub the request for NSURLSession using default configuration", ^{
         stubRequest(@"GET", @"https://example.com/say-hello").
         withHeader(@"Content-Type", @"text/plain").
         andReturn(200).
@@ -28,9 +27,11 @@ context(@"NSURLSession", ^{
         [request setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
 
         __block NSHTTPURLResponse *httpResp = nil;
-        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-//        configuration.protocolClasses=@[[LSHTTPStubURLProtocol class]];
-        NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:configuration];
+      NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+      NSArray *protocols = configuration.protocolClasses;
+      NSLog(@"%@", protocols);
+      NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:configuration];
+
         NSURLSessionDataTask *task = [urlSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
           httpResp = (NSHTTPURLResponse *)response;
         }];

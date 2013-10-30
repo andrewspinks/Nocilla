@@ -22,16 +22,16 @@
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A085B84815E30749007D33C1"
-               BuildableName = "NocillaTests.octest"
-               BlueprintName = "NocillaTests"
-               ReferencedContainer = "container:Nocilla.xcodeproj">
+               BlueprintIdentifier = "5AC7630F57FB441AB2C054BD"
+               BuildableName = "libPods.a"
+               BlueprintName = "Pods"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -42,10 +42,24 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CD0E54BEB6E7492C882EB7D1"
+               BlueprintIdentifier = "0C243D7829824088A45E65AD"
                BuildableName = "libPods-NocillaTests.a"
                BlueprintName = "Pods-NocillaTests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A085B84815E30749007D33C1"
+               BuildableName = "NocillaTests.octest"
+               BlueprintName = "NocillaTests"
+               ReferencedContainer = "container:Nocilla.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
